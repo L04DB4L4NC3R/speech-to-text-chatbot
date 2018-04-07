@@ -13,13 +13,14 @@
 <center>
 <body style="background-color:grey">
     <h1>Welcome</h1>
-    <form action="/" method='post'>
+    <form action="/submit" method='post'>
         <textarea style="font-size:20px;text-align:center;color:red;background-color:LightGreen" rows='10' cols = '50' type="text" name="question" id="q" placeholder="Enter your query here">
         </textarea> <br>
-        <button type="submit" id="bn">Ask</button>
-        <button id="btn">Speak</button>
-        <button id="bttn">clear</button>
+        <!-- <button id="btn">Speak</button> -->
+        <button type="submit" id='sb'>Submit</button>
     </form>
+    <button id="bttn">clear</button>
+    <form action="/"><button type="submit" id="bn">Double click to Speak</button></form>
     <br>
     <h3>Example questions-> </h3> <br>
     <h3>what time does the lab close</h3>

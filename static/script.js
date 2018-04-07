@@ -15,4 +15,15 @@ $(document).ready(()=>{
         $("#q").val('');
     });
 
+
+
+    $("#sb").on('click',(e)=>{
+
+        e.preventDefault();
+        $.post('/submit',{question:$("#q").val()},(data)=>{
+            $("#q").val(data);
+        });
+
+    });
+
 });
